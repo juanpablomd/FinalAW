@@ -1,0 +1,46 @@
+// Definir variables para reutilizar colores y estilos
+$color-fondo: #343a40;
+$color-texto: #ffffff;
+$color-enlace: #ffffff;
+
+// Estilo del footer
+.footer {
+  background-color: $color-fondo;
+  color: $color-texto;
+  padding: 20px 0;
+  text-align: center;
+  margin-top: 80px;
+
+  a {
+    color: $color-enlace;
+  }
+
+  
+  .container-footer {
+    max-width: 1200px;
+    margin: 0 auto;
+
+   
+    .text-footer {
+      font-size: 14px;
+
+     
+      a {
+        text-decoration: none;
+        font-weight: bold;
+
+      
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}
+
+
+
+
+
+
+

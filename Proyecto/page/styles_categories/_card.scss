@@ -1,0 +1,31 @@
+.cards{
+    background-color: $colormenu;
+    width: 350px;
+    height: 570px;
+    padding: 20px;
+    color: $color-w;
+    border-radius: 10px;
+    box-shadow: 10px 10px 5px 0px rgba(77,74,77,1);
+
+}
+    
+
+img{
+    width: 100%;
+}
+
+.desc{
+    margin-top: 32px;
+    font-size: smaller;
+}
+
+.card-footer{
+    display: flex;
+    margin-top: 30px;
+    justify-content: space-around;
+}
+
+
+
+
+

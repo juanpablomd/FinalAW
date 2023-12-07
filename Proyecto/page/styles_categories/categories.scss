@@ -1,0 +1,172 @@
+@import 'colors';
+@import "~bootstrap/scss/bootstrap";
+
+@mixin titulos(){
+    color: $color-b;
+    text-align: center;
+    margin-top: 10px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 10px;
+}
+
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+//HEADER CABECERA PRINCIPAL
+
+header{
+
+    background-color: $colormenu;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 85px;
+    padding: 5px;
+
+    img{
+        width: 80px;
+        height: 70px;
+        margin-left: 40px;
+        cursor: pointer;
+        transition: all 0.3s;
+    }
+
+
+    nav{
+        max-width: 400px;
+        margin: auto;
+        background-color: $nav-b;
+        font-size: 20px;
+        width: 900px;
+        border-radius: 5px;
+    }
+
+    .btn-exit{
+        background-color: $color-r;
+        color: $color-w;
+        height: 50px;
+        font-size: 15px;
+        border: none;
+        width: 80px;
+        border-radius: 20px;
+    }
+
+    //hovers
+    .logo img:hover{
+        transform: scale(1.1);
+           
+    } 
+
+    .btn-exit:hover{
+        background-color: $color-rs;
+    }
+
+
+}
+
+
+//MENU
+
+.menu{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+
+    li a{
+        display: block;
+        padding: 15px 50px;
+        color: $color-w;
+    }
+
+    a{
+        font-size: 17px;
+        text-decoration: none;
+    }
+
+    //hovers
+
+    li a:hover{
+        background-color: $color-v;
+    }
+}
+
+
+
+//MENU VERTICAL
+
+.menu-vertical{
+    position: absolute;
+    display: none;
+    list-style: none;
+    width: 165px;
+    background-color: $nav-b;
+    
+    li a{
+        color: $color-w;
+        font-size: 16px;
+        padding: 4px;
+    }
+
+}
+
+//h
+.menu li:hover .menu-vertical{
+    display: block;
+}
+
+
+// Estilos para el control numérico
+
+
+.numericUpDown {
+    width: 100px; // Ajusta el ancho según sea necesario
+  }
+  
+  .btn-add-to-cart {
+    background-color: #28a745; // Color de éxito de Bootstrap
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  
+    &:hover {
+      background-color: #218838; // Color más oscuro al pasar el ratón
+    }
+  }
+
+
+
+//Titulo categoria
+
+.title-category{
+    @include titulos()
+}
+#Monitors{
+    @include titulos()
+}
+
+#Phones{
+    @include titulos()
+}
+#Televisions{
+    @include titulos()
+}
+
+
+
+//Categories
+ @import 'card';
+ @import 'layout';
+
+
+
+
+
+
+

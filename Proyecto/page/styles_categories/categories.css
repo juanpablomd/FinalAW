@@ -1,0 +1,207 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background-image: url(imagenes/samsung-galaxy-s23-gray-black-theme-wallpaper-2560x1920_27.jpg);
+}
+
+header {
+  background-color: #262626;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 85px;
+  padding: 5px;
+}
+header img {
+  width: 80px;
+  height: 70px;
+  margin-left: 40px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+header nav {
+  max-width: 400px;
+  margin: auto;
+  background-color: #333;
+  font-size: 20px;
+  width: 900px;
+  border-radius: 5px;
+}
+header .btn-exit {
+  background-color: rgba(218, 15, 15, 0.644);
+  color: white;
+  height: 50px;
+  font-size: 15px;
+  border: none;
+  width: 80px;
+  border-radius: 20px;
+}
+header .logo img:hover {
+  transform: scale(1.1);
+}
+header .btn-exit:hover {
+  background-color: red;
+}
+
+.menu {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+}
+.menu li a {
+  display: block;
+  padding: 15px 50px;
+  color: white;
+}
+.menu a {
+  font-size: 17px;
+  text-decoration: none;
+}
+.menu li a:hover {
+  background-color: rgba(57, 0, 214, 0.507);
+}
+
+.menu-vertical {
+  position: absolute;
+  display: none;
+  list-style: none;
+  width: 165px;
+  background-color: #333;
+}
+.menu-vertical li a {
+  color: white;
+  font-size: 16px;
+  padding: 4px;
+}
+
+.menu li:hover .menu-vertical {
+  display: block;
+}
+
+.numericUpDown {
+  width: 100px;
+}
+
+.btn-add-to-cart {
+  background-color: #28a745;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+.btn-add-to-cart:hover {
+  background-color: #218838;
+}
+
+.title-category {
+  color: black;
+  text-align: center;
+  margin-top: 10px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 10px;
+}
+
+#Monitors {
+  color: black;
+  text-align: center;
+  margin-top: 10px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 10px;
+}
+
+#Phones {
+  color: black;
+  text-align: center;
+  margin-top: 10px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 10px;
+}
+
+#Televisions {
+  color: black;
+  text-align: center;
+  margin-top: 10px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 10px;
+}
+
+.cards {
+  background-color: #262626;
+  width: 350px;
+  height: 570px;
+  padding: 20px;
+  color: white;
+  border-radius: 10px;
+  box-shadow: 10px 10px 5px 0px rgb(77, 74, 77);
+}
+
+img {
+  width: 100%;
+}
+
+.desc {
+  margin-top: 32px;
+  font-size: smaller;
+}
+
+.card-footer {
+  display: flex;
+  margin-top: 30px;
+  justify-content: space-around;
+}
+
+#btn-carrito {
+  color: black;
+  background-color: rgba(238, 255, 0, 0.747);
+  border-radius: 6px;
+  font-size: 15px;
+  border: 0px;
+  cursor: pointer;
+}
+
+#btn-carrito:hover {
+  background-color: yellow;
+}
+
+.conteiner-card {
+  display: grid;
+  grid-template-columns: 35% 35% 35%;
+  gap: 20px 20px;
+  width: 85%;
+  margin: 0 auto;
+  padding: 5px;
+}
+
+.btn-add {
+  width: 30px;
+  height: 30px;
+  border-radius: 100%;
+  border: 0px;
+  cursor: pointer;
+  background-color: rgb(28, 141, 28);
+  color: white;
+}
+
+.btn-quit {
+  width: 30px;
+  height: 30px;
+  border-radius: 100%;
+  border: 0px;
+  cursor: pointer;
+  background-color: rgba(218, 15, 15, 0.644);
+  color: white;
+}
+
+.btn-quit:hover {
+  background-color: red;
+}
+
+.btn-add:hover {
+  background-color: rgb(24, 233, 24);
+}/*# sourceMappingURL=categories.css.map */

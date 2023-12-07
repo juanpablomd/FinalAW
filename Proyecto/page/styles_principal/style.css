@@ -1,0 +1,92 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background-color: black;
+}
+
+header {
+  background-color: #262626;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 85px;
+  padding: 5px;
+}
+header img {
+  width: 80px;
+  height: 70px;
+  margin-left: 40px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+header nav {
+  max-width: 400px;
+  margin: auto;
+  background-color: #333;
+  font-size: 20px;
+  width: 900px;
+  border-radius: 5px;
+}
+header .btn-exit {
+  background-color: rgba(218, 15, 15, 0.644);
+  color: white;
+  height: 50px;
+  font-size: 15px;
+  border: none;
+  width: 80px;
+  border-radius: 20px;
+}
+header .logo img:hover {
+  transform: scale(1.1);
+}
+header .btn-exit:hover {
+  background-color: red;
+}
+
+.menu {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+}
+.menu li a {
+  display: block;
+  padding: 15px 50px;
+  color: white;
+}
+.menu a {
+  font-size: 17px;
+  text-decoration: none;
+}
+.menu li a:hover {
+  background-color: rgba(57, 0, 214, 0.507);
+}
+
+.menu-vertical {
+  position: absolute;
+  display: none;
+  list-style: none;
+  width: 165px;
+  background-color: #333;
+}
+.menu-vertical li a {
+  color: white;
+  font-size: 16px;
+  padding: 4px;
+}
+
+.menu li:hover .menu-vertical {
+  display: block;
+}
+
+.title-category {
+  color: white;
+  text-align: center;
+  margin-top: 10px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 10px;
+}/*# sourceMappingURL=style.css.map */
